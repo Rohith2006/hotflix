@@ -14,8 +14,8 @@ const globalStyles = `
 
   body {
     position: fixed;
-    top: -4vh;
-    left: -18.2vw;
+    top: 0;
+    left: 0;
     right: 0;
     bottom: 0;
   }
@@ -60,10 +60,10 @@ const HotFlix = () => {
             <style>{globalStyles}</style>
             <div className="w-screen h-screen bg-gray-900 text-white flex flex-col p-[.4vw]">
                 <div className="flex justify-between items-center p-2 bg-gray-800">
-                    <h1 className="text-[4vw] font-bold ml-[1vw]">HotFlix</h1>
+                    <h1 className="text-[2.6vw] font-bold ml-[1vw]">HotFlix</h1>
                     <button 
                         onClick={switchMode}
-                        className="bg-blue-500 text-white font-semibold py-1 px-3 rounded text-sm hover:bg-blue-600 transition duration-300"
+                        className="bg-blue-500 text-white font-semibold py-1 px-3 rounded text-m hover:bg-blue-600 transition duration-300"
                     >
                         Switch to {wantedType()}
                     </button>
@@ -79,7 +79,7 @@ const HotFlix = () => {
                     />
                     
                     <button
-                        className="bg-green-500 text-white font-semibold py-1 px-3 rounded text-sm hover:bg-green-600 transition duration-300"
+                        className="bg-green-500 text-white font-semibold py-1 px-5 rounded text-m hover:bg-green-600 transition duration-300"
                         onClick={type === 'movie' ? fetchMovieId : fixAnime}
                         disabled={loading}
                     >
