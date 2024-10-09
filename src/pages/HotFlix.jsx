@@ -123,7 +123,7 @@ const HotFlix = () => {
                         <iframe 
                             src={`https://2anime.xyz/embed/${anime}-episode-${epi}`}
                             allowFullScreen
-                            className="w-full h-full"
+                            className="w-[95vw] h-[50vw] ml-[2.5vw] mt-[2vh] lg:w-full lg:h-full lg:ml-[0px] lg:mt-[0px]"
                         />
                     ) : (
                         <div className="flex items-center justify-center h-full">
