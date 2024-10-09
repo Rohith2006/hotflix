@@ -60,7 +60,7 @@ const HotFlix = () => {
             <style>{globalStyles}</style>
             <div className="w-screen h-screen bg-gray-900 text-white flex flex-col p-[.4vw]">
                 <div className="flex justify-between items-center p-2 bg-gray-800">
-                    <h1 className="text-[2.6vw] font-bold ml-[1vw]">HotFlix</h1>
+                    <h1 className="text-[4vh] font-bold ml-[1vw]">HotFlix</h1>
                     <button 
                         onClick={switchMode}
                         className="bg-blue-500 text-white font-semibold py-1 px-3 rounded text-m hover:bg-blue-600 transition duration-300"
@@ -117,7 +117,7 @@ const HotFlix = () => {
                         <iframe
                             src={`https://www.2embed.cc/embed/${movieID}`}
                             allowFullScreen
-                            className="w-full h-full"
+                            className="w-[95vw] h-[50vw] ml-[2.5vw] mt-[2vh] lg:w-full lg:h-full lg:ml-[0px] lg:mt-[0px]"
                         />
                     ) : type === 'anime' ? (
                         <iframe 
